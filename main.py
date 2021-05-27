@@ -59,8 +59,8 @@ def writeTextOnToFile(text , tempfile):
     demofile.write(text)
     demofile.close()
 
-# url = {"url": "https://en.wikipedia.org/wiki/Stephen_Curry"}
-# response = requests.post("https://wikiscraperproject.herokuapp.com/", data = url)
+url = {"url": "https://en.wikipedia.org/wiki/Stephen_Curry"}
+response = requests.post("https://wikiscraperproject.herokuapp.com/", data = url)
 webSite = Flask(__name__)
 # resp = requests.get('')
 
@@ -89,9 +89,9 @@ def encrypted():
     return encryptedText
     # decrypt(tempfile)
     # return response.text
-# if __name__ == '__main__':
+if __name__ == '__main__':
     # webSite.debug = True
-    # webSite.run(port=5000)
+    webSite.run()
 
 
 
